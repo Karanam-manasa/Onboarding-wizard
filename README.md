@@ -50,7 +50,7 @@ npm install
 npm start
 
 
-![image](https://github.com/user-attachments/assets/586559a3-35f0-433f-87ec-562e24d6feda)
+! [image](https://github.com/user-attachments/assets/586559a3-35f0-433f-87ec-562e24d6feda)
 ![image](https://github.com/user-attachments/assets/aa13cfe6-d15a-47a6-b79d-da48723fe711)
 ![image](https://github.com/user-attachments/assets/c460b14c-0ddb-4f5d-b5fe-dd0a040adf0d)
 ![image](https://github.com/user-attachments/assets/3a913914-5774-4738-be27-120908576d0e)
