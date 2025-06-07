@@ -34,13 +34,6 @@ This is the frontend part of the Intern Sprint Challenge project. The goal is to
   - Responsive layout for both mobile & desktop
   - (Optional) Chart to show weekly progress using **Recharts**
 
-## 📸 Screenshots
-
-> Add screenshots here once your app UI is ready  
-> Example:
-> ![Onboarding Step](screenshots/step1.png)  
-> ![Dashboard](screenshots/dashboard.png)
-
 ## 📦 How to Run Locally
 
 ```bash
