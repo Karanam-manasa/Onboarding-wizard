@@ -48,7 +48,6 @@ This is the frontend part of the Intern Sprint Challenge project. The goal is to
 
 ![image](https://github.com/user-attachments/assets/4a699a6d-5626-41a6-bc6f-d04eb15cb06f)
 
-![image](https://github.com/user-attachments/assets/27b93326-0741-44f5-bc45-f27a87d1e900)
 
 # Light Theme and List Layout
 
