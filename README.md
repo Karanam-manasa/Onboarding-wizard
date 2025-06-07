@@ -32,7 +32,7 @@ This is the frontend part of the Intern Sprint Challenge project. The goal is to
     - Team Members
     - Notifications
   - Responsive layout for both mobile & desktop
-  - (Optional) Chart to show weekly progress using **Recharts**
+  - Chart to show weekly progress using **Recharts**
 
 ## 📦 How to Run Locally
 
