@@ -1,0 +1,1163 @@
+/* File: src/index.css */
+/* =========== Global Styles =========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* =========== Progress Bar =========== */
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 8px;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.progress {
+  background-color: #3b82f6;
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* =========== Input Fields & Buttons =========== */
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.button-next {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-back {
+  background-color: #6b7280;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-submit {
+  background-color: #10b981;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+/* Onboarding Form Styles */
+.onboarding-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.onboarding-heading {
+  color: #111827;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.onboarding-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 0.85rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background: #f9fafb;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #ffffff;
+}
+
+.form-button {
+  padding: 0.85rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.form-button:hover {
+  background: #2563eb;
+}
+
+.form-button:active {
+  transform: scale(0.98);
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-bottom: 2.5rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 3px;
+  width: 33.33%; /* Adjust based on current step */
+  transition: width 0.4s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .onboarding-container {
+    padding: 1.75rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  
+  .onboarding-heading {
+    font-size: 1.5rem;
+  }
+  
+  .form-input, .form-button {
+    padding: 0.75rem;
+  }
+}
+/* =========== Onboarding Step Wrappers =========== */
+.onboarding-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.step1-container,
+.step2-container,
+.step3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step1-container input,
+.step2-container input,
+.step3-container select {
+  max-width: 500px;
+}
+
+.step1-container .button-next,
+.step2-container .button-next,
+.step2-container .button-back,
+.step3-container .button-submit,
+.step3-container .button-back {
+  margin-top: 1rem;
+}
+
+/* =========== Ensure select fields match input styling =========== */
+select.input {
+  appearance: none;
+  background-color: #ffffff;
+}
+
+/* =========== Responsive adjustments (mobile) =========== */
+@media (max-width: 640px) {
+  .container {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+
+  .onboarding-step {
+    padding: 0 0.5rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+  .input {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  /* Dashboard cards */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+ .button-next, .button-back, .button-submit {
+  min-height: 48px;
+  padding: 12px 24px;
+}
+
+  /* Progress bar */
+  .progress-bar {
+    margin: 0.5rem 0;
+  }
+}
+/* =========== Dashboard-Specific Styles (cards + container) =========== */
+.dashboard-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.dashboard-subheading {
+  font-size: 1rem;
+  color: #4b5563; /* Gray-700 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1rem;
+  /* On wider screens: 3 columns of 220px minimum each; smaller screens auto-fit */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #6b7280; /* Gray-500 */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827; /* Gray-900 */
+}
+
+/* Responsive adjustments for dashboard on smaller screens */
+@media (max-width: 640px) {
+  .dashboard-container {
+    margin: 1rem;
+    padding: 0.75rem;
+  }
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+  .dashboard-subheading {
+    font-size: 0.9rem;
+  }
+  .dashboard-card {
+    padding: 1rem;
+  }
+  .card-value {
+    font-size: 1.25rem;
+  }
+}
+/* Add to your CSS */
+/* Add to bottom of file */
+.input-error {
+  border-color: #ef4444;
+  outline: 1px solid #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin: -0.5rem 0 0.5rem 0;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb; /* Light gray track */
+  height: 8px;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+  overflow: hidden; /* Essential for containing the progress */
+}
+
+.progress {
+  background-color: #3b82f6; /* Solid blue base */
+  height: 100%;
+  border-radius: 9999px;
+  position: relative; /* Needed for the striped overlay */
+}
+
+/* White striped overlay */
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255,255,255,0.5) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0.5) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: progress-stripes 1s linear infinite;
+}
+
+@keyframes progress-stripes {
+  0% { background-position: 1rem 0; }
+  100% { background-position: 0 0; }
+}
+
+
+.progress-item {
+  margin: 0.75rem 0;
+}
+
+.progress-item label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Dashboard Progress Section */
+.progress-section {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.progress-section h3 {
+  margin-bottom: 0.75rem;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.progress-section span {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chart-container h3 {
+  margin-bottom: 1rem;
+  color: #374151;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Loading Text */
+.loading-text {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .progress-section {
+    margin: 1rem 0;
+    padding: 0.75rem;
+  }
+  
+  .chart-container {
+    margin-top: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Modern Onboarding Wizard CSS */
+.onboarding-container {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.onboarding-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.onboarding-heading {
+  color: #111827;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.onboarding-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f9fafb;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #ffffff;
+}
+
+.next-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.next-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.25);
+}
+
+.next-button:active {
+  transform: translateY(0);
+}
+
+.progress-container {
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  border-radius: 3px;
+  width: 33%;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-group {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.form-group:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .onboarding-container {
+    padding: 2rem 1.5rem;
+    margin: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .onboarding-heading {
+    font-size: 1.6rem;
+  }
+}
+
+/* Step1 Component Styles */
+.step1-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.step-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step-header h2 {
+  font-size: 1.75rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.step1-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #ffffff;
+}
+
+.input-error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.next-button {
+  padding: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.next-button:hover {
+  background: #2563eb;
+}
+
+.next-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .step1-wrapper {
+    padding: 1.5rem;
+  }
+  
+  .step-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Step2 Specific Styles */
+.step2-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.step2-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.back-button {
+  padding: 1rem;
+  background: #9a9ea3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  background: rgb(145, 226, 145);
+}
+
+
+
+.next-button {
+  padding: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.next-button:hover {
+  background: #2563eb;
+}
+
+.next-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .step2-wrapper {
+    padding: 1.5rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+/* Step3 Specific Styles */
+.step3-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Full Dark Theme */
+.dark {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #374151;
+}
+
+.dark .step3-wrapper {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.dark .step-header h2 {
+  color: var(--text-primary);
+}
+
+.dark .step-header p {
+  color: var(--text-secondary);
+}
+
+.dark .form-group label {
+  color: var(--text-primary);
+}
+
+.dark .select-wrapper {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.dark .form-select {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.dark .back-button {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.dark .back-button:hover {
+  background-color: #4b5563;
+}
+
+/* Preview elements matching dashboard */
+.dark .theme-preview {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.dark .preview-card {
+  background-color: #374151;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.dark .preview-text {
+  color: var(--text-primary);
+}
+.step3-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.select-wrapper {
+  position: relative;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.select-wrapper:hover {
+  border-color: #d1d5db;
+}
+
+.select-wrapper:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #ffffff;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 0.7rem;
+  pointer-events: none;
+}
+
+.submit-button {
+  padding: 1rem;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-button:hover {
+  background: #059669;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .step3-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+
+/* Dark Theme Overrides */
+.dark-theme {
+  background-color: #111827;
+  color: #66686c;
+}
+
+.dark-theme .dashboard-container {
+  background-color: #1f2937;
+  border-color: #073075;
+}
+
+.dark-theme .dashboard-heading,
+.dark-theme .dashboard-subheading,
+.dark-theme .card-title,
+.dark-theme .chart-container h3 {
+  color: #f9fafb;
+}
+
+.dark-theme .dashboard-subheading {
+  color: #d1d5db;
+}
+
+.dark-theme .dashboard-card {
+  background-color: #0b1d3b;
+  border-color: #4b5563;
+}
+
+.dark-theme .card-value {
+  color: #ffffff;
+}
+
+.dark-theme .progress-section {
+  background-color: #374151;
+  border-color: #4b5563;
+}
+
+.dark-theme .weather-widget {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #ffffff;
+}
+
+
+/* Dark Theme Preview Styles */
+.dashboard-preview {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  border-radius: 12px;
+  border: 1px solid #374151;
+}
+
+.preview-header h3 {
+  color: #626263;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.preview-header p {
+  color: #6d6e70;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-card {
+  background-color: #374151;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.preview-card span {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-card strong {
+  color: #f9fafb;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.preview-weather {
+  background-color: #374151;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #f9fafb;
+  font-size: 0.9rem;
+}
+
+/* Dark Theme Form Styles */
+.dark-theme .step3-wrapper {
+  background-color: #1f2937;
+  color: #6c6d6e;
+}
+
+.dark-theme .step-header h2 {
+  color: #a4a7a9;
+}
+
+.dark-theme .step-header p {
+  color: #737477;
+}
+
+.dark-theme .form-group label {
+  color: #999b9f;
+}
+
+.dark-theme .select-wrapper {
+  background-color: #374151;
+  border-color: #4b5563;
+}
+
+.dark-theme .form-select {
+  color: #f3f4f6;
+}
+
+.dark-theme .select-wrapper::after {
+  color: #9ca3af;
+}
+
+.dark-theme .back-button {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.dark-theme .back-button:hover {
+  background-color: #4b5563;
+}
+
+.dark-theme .submit-button {
+  background-color: #059669;
+}
+
+.dark-theme .submit-button:hover {
+  background-color: #047857;
+}
+
+
+/* List Layout Styles */
+.list-layout {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-table th {
+  background-color: #606263;
+  font-weight: 600;
+  color: #374151;
+}
+
+.dashboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-indicator.active {
+  background-color: #10b981;
+}
+
+.status-indicator.unread {
+  background-color: #3b82f6;
+}
+
+/* Dark Mode for List Layout */
+.dark .dashboard-table {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dark .dashboard-table th {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.dark .dashboard-table td {
+  border-bottom-color: #4b5563;
+  color: #e5e7eb;
+}
