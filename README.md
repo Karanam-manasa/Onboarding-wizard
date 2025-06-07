@@ -34,23 +34,7 @@ This is the frontend part of the Intern Sprint Challenge project. The goal is to
   - Responsive layout for both mobile & desktop
   - Chart to show weekly progress using **Recharts**
 
-## 📦 How to Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/Karanam-manasa/Onboarding-wizard.git
-
-# Navigate into the project directory
-cd Onboarding-wizard
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-
-
-! [(https://github.com/user-attachments/assets/586559a3-35f0-433f-87ec-562e24d6feda)](https://github.com/user-attachments/assets/586559a3-35f0-433f-87ec-562e24d6feda)
+![image](https://github.com/user-attachments/assets/586559a3-35f0-433f-87ec-562e24d6feda)
 ![image](https://github.com/user-attachments/assets/aa13cfe6-d15a-47a6-b79d-da48723fe711)
 ![image](https://github.com/user-attachments/assets/c460b14c-0ddb-4f5d-b5fe-dd0a040adf0d)
 ![image](https://github.com/user-attachments/assets/3a913914-5774-4738-be27-120908576d0e)
@@ -74,6 +58,24 @@ Validations
 ![image](https://github.com/user-attachments/assets/ff35b956-7660-48b6-bbfd-b771954a2cdb)
 ![image](https://github.com/user-attachments/assets/0b5ab5db-fb4d-47ef-9ef2-0b96ea6adff6)
 ![image](https://github.com/user-attachments/assets/5297906e-a753-4faf-b2cd-ff310f90e03d)
+
+
+
+## 📦 How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Karanam-manasa/Onboarding-wizard.git
+
+# Navigate into the project directory
+cd Onboarding-wizard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
 
 
 
