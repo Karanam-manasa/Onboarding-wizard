@@ -73,6 +73,18 @@ This is the frontend part of the Intern Sprint Challenge project. The goal is to
 
 ![image](https://github.com/user-attachments/assets/5297906e-a753-4faf-b2cd-ff310f90e03d)
 
+# Mobile View
+![image](https://github.com/user-attachments/assets/d576effa-8f3b-40ff-857c-098aea4b4c91)
+
+![image](https://github.com/user-attachments/assets/b5ef97aa-f12a-4e7c-886a-412fab0de787)
+
+![image](https://github.com/user-attachments/assets/7566ccce-f688-4b06-953c-2d99aeaeadff)
+
+![image](https://github.com/user-attachments/assets/4c75c4ec-966d-419f-8209-87118455e082)
+
+
+
+
 
 
 ## 📦 How to Run Locally
